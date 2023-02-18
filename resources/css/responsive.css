@@ -1,0 +1,207 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@media only screen and (max-width: 1200px){
+    #home .hero-text-box{
+        margin-top: 18rem;
+
+    } 
+    .box p {
+        padding: 1rem;
+        font-size: 1.7rem;
+      }
+}
+@media only screen and (max-width: 1024px){
+    #home .hero-text-box{
+        margin-top: 16rem;
+    }
+   
+    .team-section .box p{
+        padding: 1rem
+    }
+
+    .box p{
+
+        padding: 2rem 1rem;
+    }
+
+    .testimonial .client-review p{
+        font-size: 1.7rem;
+    }
+
+}
+
+@media only screen and (max-width: 980px){
+    .main-nav{
+        display: none;
+    }
+
+    #home .hero-text-box{
+        margin-top: 16.5rem;
+    }
+
+    html{
+        font-size: 57.5%;
+    }
+    .client-photo{
+        width: 100%;
+
+    }
+
+    .testimonial .client-review ,p, h3, span{
+        /* width: 100%; */
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .contact-section form{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .mobile-menu span{
+        display: block;
+      }
+}
+
+@media only screen and (max-width: 768px){
+    .span_1_of_4{
+        width: 49.2%;
+        
+    }
+
+    .box p{
+        width: 85%;
+        padding: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .team-section .box p{
+        padding: 1.8rem;
+    }
+
+    .portfolio-section h4{
+        font-size: 1.7rem;
+    }
+
+    .testimonial .client-review p{
+        width: 33rem;
+        padding: .7rem;
+    }
+
+    .testimonial .col:nth-child(3),
+    .testimonial .col:nth-child(4){
+       margin-top: -5rem;
+    }
+
+    #home .hero-text-box{
+        margin-top: 10rem;
+    }
+    .row{
+        margin: 0 2rem;
+    }
+   html{
+        font-size: 60%;
+   }
+   .servise-icons{
+    height: 9rem;
+   }
+   h1{
+        font-size: 3.5rem;
+   }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 502px){
+    .service-section .box p{
+        font-size: 1.4rem;
+    }
+
+    .testimonial .client-review p{
+        width: 20rem;
+    }
+
+}
+@media only screen and (max-width: 480px){
+    .span_1_of_4{
+        width: 100%;
+        
+    } 
+    .pregraph-text{
+        width: 100%
+    }
+
+    h1{
+        font-size: 3rem;
+       }
+    h2{
+        font-size: 2.8rem;
+    }
+    h3{
+        font-size: 2.2rem;
+     }
+
+     .testimonial .col:nth-child(2),
+     .testimonial .col:nth-child(3){
+        margin-top: -4.4rem;
+     }
+     .testimonial .col:nth-child(4){
+        margin-top: 5rem
+     }
+
+     .servise-icons {
+        height: 7rem;
+      }
+
+      .team-section .team-icon {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        /* margin: 3rem 0; */
+      }
+
+      footer ul li a {
+        margin: 6px 94px;
+        display: block;
+
+      }
+
+      .portfolio-section .portfolio-filter button {
+        padding: 1rem 1rem;
+        margin: 0 .2rem;
+
+      }
+
+      .testimonial .client-review p{
+        width: 100%;
+        font-size: 1.9rem;
+      }
+
+      .service-section .box p{
+        font-size: 1.9rem;
+      }
+
+      
+      .pregraph-text{
+        font-size: 2rem;
+      }
+
+      .team-section .box p{
+        font-size: 1.9rem;
+      }
+
+      .testimonial p{
+        font-size: 2.3rem;
+      }
+}
+

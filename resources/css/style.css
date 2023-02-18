@@ -1,0 +1,679 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*===========================================
+                    BASIC CSS
+  ===========================================*/
+  
+  *{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+  }
+
+
+  html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+  }
+  
+  body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+}
+
+ul li a{
+  list-style: none;
+  text-decoration: none;
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+h1{
+  font-size: 4.2rem;
+}
+
+
+/*===========================================
+                REUSABLE COMPONENT
+  ===========================================*/
+
+.row{
+  max-width: 96rem;
+  margin: 0 auto;
+  
+}
+
+section{
+  padding: 8rem 0;
+  text-align: center;
+  
+}
+
+h2{
+  font-size: 4rem;
+  font-weight: bold;
+  -webkit-text-transform: uppercase;
+          text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-align: center;
+
+}
+
+h3{
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+
+}
+
+h4{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* pragraph-text */
+
+.pregraph-text{
+  font-size: 1.8rem;
+  width: 60%;
+  margin:auto;
+  line-height: 3rem;
+   
+}
+
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 23rem;
+    padding: 1.6rem;
+
+}
+
+.col:nth-child(3){
+  margin-left:0 ;
+}
+
+/*===========================================
+                HEADER SECTION
+  ===========================================*/
+
+  
+  header{
+    background:
+    -webkit-gradient(linear,left top, left bottom,from(#87509ceb),to(#87509ceb)),url(../../bg/bg-6.jpg);
+    background:
+    -o-linear-gradient(#87509ceb,#87509ceb),url(../../bg/bg-6.jpg);
+    background:
+    linear-gradient(#87509ceb,#87509ceb),url(../../bg/bg-6.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+  }
+  
+  
+  .logo{
+    height: 3.5rem;
+    width: auto;
+    margin-top: 6.8rem;
+    
+  }
+
+      /* BUTTON */
+
+      .btn:link,
+      .btn:visited,
+      .btn{
+        text-decoration: none;
+        color: #ffffff;
+        background: #333;
+        padding: 2.5rem 11.2rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #000;
+        display: inline-block;
+        margin-top: 4.5rem;
+        font-size: 1.6rem;
+      }
+      
+
+    /* MAIN NAVIGATION */
+
+  .main-nav{
+    float: right;
+    margin-top: 6.8rem;
+
+  }
+  .main-nav li{
+    display: inline-block;
+    margin-left: 4rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 1.6rem;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited{
+   color: #ffffff;
+   
+  }
+
+  .main-nav li:first-child{
+    
+    margin-left: 0;
+  }
+
+  .main-nav li:hover{
+    background: #643A79;
+  }
+
+.active{
+    background: #643A79;
+  
+}
+
+
+/*STICKY MENU*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #87509C;
+  padding: 2rem 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 3px 8px 30px 3px #878787;
+          box-shadow: 3px 8px 30px 3px #878787;
+  
+}
+
+.sticky .logo{
+margin-top: 0rem
+}
+
+.sticky .main-nav{
+  margin-top: 0.4rem;
+}
+
+/*MOBILE MENU*/
+
+.mobile-menu span{
+  color: #fff;
+  font-size: 4.5rem;
+  float: right;
+  margin-top: -5rem;
+  cursor: pointer;
+  display: none;
+}
+.close-btn{
+  color:#999;
+  top: 10%;
+  right: 5%;
+  margin-top: -4rem;
+  margin-right: 2.9rem;
+  position: absolute;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 5rem;
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  overflow-x: hidden;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+}
+
+.overlay-content{
+  position: relative;
+  top: 20%;
+  text-align: center;
+}
+
+.overlay-content a{
+  color: #999;
+  display: block;
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  letter-spacing: .3rem;
+
+}
+
+.overlay a:hover{
+  color: #fff;
+}
+
+/*MOBILE MENU*/
+.hero-text-box{
+  margin: 15% auto;
+  text-align: center;
+  color: #fff
+}
+
+.btn-hero:link,
+.btn-hero:visited{
+  background: #EB7D4B;
+  border-color: #C86A40;
+}
+
+/*===============================================
+                  SERVICES SECTION
+  ===============================================*/
+
+  .service-section{
+    text-align: center;
+    color: #fff;
+    background: -webkit-gradient(linear,left top, left bottom,from(#17c2a4ed),to(#17c2a4ed)),url(../../bg/bg-3.jpg);
+    background: -o-linear-gradient(#17c2a4ed,#17c2a4ed),url(../../bg/bg-3.jpg);
+    background: linear-gradient(#17c2a4ed,#17c2a4ed),url(../../bg/bg-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
+
+h2::after{
+  content: "";
+  display: block;
+  height: .4rem;
+  background: #14A58C;
+  width: 8rem;
+  margin: auto;
+  margin-top: 2rem;
+
+}
+
+.servise-icons{
+  height: 12rem;
+  margin: 3.5rem 2.5rem;
+
+}
+  
+/*=================================================
+  TEAM SECTION
+  ==================================================*/
+
+.team-section{
+  background: -webkit-gradient(linear,left top, left bottom,from(#E7F1F8EB),to(#E7F1F8EB)),url(../../bg/bg-2.jpg);
+  background: -o-linear-gradient(#E7F1F8EB,#E7F1F8EB),url(../../bg/bg-2.jpg);
+  background: linear-gradient(#E7F1F8EB,#E7F1F8EB),url(../../bg/bg-2.jpg);
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.team-section .team-icon{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin: 3rem 0;
+}
+
+.team-section h3{
+  margin-bottom: 1rem;
+
+}
+
+ .role{
+  font-size: 1.6rem;
+  color: #15B4E9;
+  font-weight: 400;
+  
+}
+  .team-section .box p{
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #3C4761;
+  }
+
+
+  .social-icons{
+    margin-top: 2rem;
+
+  }
+
+  .social-icons ul li a i{
+    color: #fff;
+  }
+
+  .social-icons ul li{
+    display: inline-block;
+  }
+  .social-icons ul li a:link{
+    margin: 0 .5rem;
+
+  }
+
+  .social-icons ul li a:link i::before{
+    background: #BDD1DF;
+    padding: 1rem;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    display:inline-block;
+    text-align: center;
+
+  }
+
+
+
+.social-icons ul li a:hover i::before{
+  background: #2376B0;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+  
+}
+
+  .team-section h2::after{
+    background: #C8D9E5;
+  }
+
+
+  /*==================================================
+    SKILL SECTION
+    ==================================================*/
+
+    .skill-section{background: -webkit-gradient(linear,left top, left bottom,from(#fffffff2),to(#fffffff2)),url(../../bg/bg-1.jpg);background: -o-linear-gradient(#fffffff2,#fffffff2),url(../../bg/bg-1.jpg);background: linear-gradient(#fffffff2,#fffffff2),url(../../bg/bg-1.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+    }
+
+    .skill-section h2::after{
+      background: #DFE8ED;
+    }
+
+
+   .radial-progress{
+    margin-top: 4rem;
+   }
+                     
+   .skill-section .radial-progress circle {
+    stroke-width: 5;
+
+   }
+
+   .skill-section .box .radial-progress text{
+    fill: #3C4761 ;
+   }
+
+   .skill-section .box .web-design circle{
+    stroke: #30BAE7;
+   }
+   .skill-section .box .html-css circle{
+    stroke: #D74680;
+   }
+   .skill-section .box .graphic-design circle{
+    stroke: #15C7A8;
+   }
+   .skill-section .box .ui-ux circle{
+    stroke: #EB7D4B;
+   }
+
+/*================================================
+   PORTFOLIO SECTION
+  ================================================*/
+
+  .portfolio-section{
+    background: #FFDD99;
+    text-align: center;
+  }
+  
+    .portfolio-section .portfolio-filter{
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .portfolio-section .portfolio-filter button{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    margin: 0 .5rem;
+    background: #EBC985;
+    font-size: 1.8rem;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    
+}
+
+.portfolio-section .portfolio-filter button:hover{
+  -webkit-box-shadow: inset 2px 2px 6px #878787;
+          box-shadow: inset 2px 2px 6px #878787;
+}
+
+  .portfolio-section .box .portfolio-img{
+    width: 98%;
+    height: auto;
+    
+  }
+
+ .portfolio-section h2::after{
+    background: #EBC985;
+  }
+
+  .portfolio-section h4{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    
+  }
+
+  .portfolio-section .portfolio-filter .mixitup-control-active{
+    background: #fff;
+  }
+
+  /*================================================
+   TESTIMONIAL SECTION
+  ================================================*/
+
+  .testimonial{
+    background:#D74680;
+
+  }
+
+  .testimonial h2{
+    color:#fff;
+
+  }
+
+  .testimonial h2::after{
+    background: #B73C6D;
+  }
+
+  .testimonial p{
+    font-size: 1.7rem;
+    color: #fff;
+  }
+
+ 
+ .client-photo{
+  float: left;
+ }
+ 
+ .client-review{
+  float: left;
+ }
+ 
+  .testimonial img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+
+  .testimonial h3 {
+    color:#fff;
+  }
+
+  .testimonial .client-review {
+    margin-left: 5rem;
+    text-align: left;
+
+  }
+
+  .testimonial .role{
+    color: #FAC996;
+  }
+
+  .testimonial .client-review p{
+    width: 32rem;
+    font-style: italic;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .testimonial .col:nth-child(1),
+  .testimonial .col:nth-child(2){
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+
+
+ /*================================================
+   CONTACT SECTION
+  ================================================*/
+
+  .contact-section h2{
+    color: #fff;
+  }
+
+  .contact-section h2::after{
+    background: #273A71;
+  }
+
+  .contact-section{
+    background: #3C5499;
+  }
+
+  .contact-section p{
+    font-size: 1.8rem;
+    color: #fff;
+
+  }
+
+  .contact-section form{
+    margin-top: 4rem;
+    width: 70%;
+    margin-left: 15%;
+    
+  }
+
+
+  .contact-section input[type="text"],
+  input[type="email"],
+  textarea{
+    width: 100%;
+    background:#273A71;
+    border: none;
+    border-radius: .5rem;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color:#fff;
+  }
+
+  .contact-section form ::-webkit-input-placeholder{
+    color: #fff;
+    opacity: 1;
+  }
+
+  .contact-section form ::-moz-placeholder{
+    color: #fff;
+    opacity: 1;
+  }
+
+  .contact-section form :-ms-input-placeholder{
+    color: #fff;
+    opacity: 1;
+  }
+
+  .contact-section form ::-ms-input-placeholder{
+    color: #fff;
+    opacity: 1;
+  }
+
+  .contact-section form ::placeholder{
+    color: #fff;
+    opacity: 1;
+  }
+
+  .btn-submit{
+    max-width: 100%;
+    background: #30BAE7;
+    border: 0;
+    border-bottom: .5rem solid #299EC5;
+    cursor: pointer;
+    
+    
+  }
+
+
+   /*================================================
+   FOOTER SECTION
+  ================================================*/
+
+  footer{
+    background: #344B8E;
+    padding: 4.4rem 0;
+    text-align: center;
+
+    
+  }
+
+  footer ul li {
+    display: inline-block;
+    
+
+  }
+
+  footer ul li a {
+    color: #fff;
+    font-size: 2.4rem;
+    margin: 0 2rem;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+
+    
+
+  }
+
+  footer li:hover a {
+    color: #30BAE7;
+
+
+  }
+
